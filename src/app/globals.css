@@ -16,7 +16,7 @@
   }
 }
 
-body {
+/* body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
@@ -25,9 +25,14 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
-
+*/
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+.dark{
+  background-color: (30 41 59);
+  /* background-color: (241 245 249); */
 }

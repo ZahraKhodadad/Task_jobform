@@ -1,6 +1,7 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
-
+import NavBar from "@/components/NavBar";
+import vazirFonts from "../../constants/localFonts";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
@@ -11,7 +12,13 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body dir="rtl" className={`inter.className ${vazirFonts.variable} font-sans bg-gray-100 text-slate-700 dark:bg-slate-700 dark:text-slate-50`}>
+        <NavBar />
+        <div className="mt-20">
+        {children}
+        </div>
+     
+      </body>
     </html>
   );
 }
